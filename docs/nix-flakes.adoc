@@ -70,6 +70,63 @@ writing a Home Manager configuration.
 [[sec-flakes-standalone]]
 === Standalone setup
 
+The installation procedure for the standalone version of Home Manager
+is currently different for the unstable and stable branch.
+Therefore, if you are tracking the Nixpkgs or NixOS unstable please go to
+<<sec-flakes-standalone-unstable>>,
+and if you track Nixpkgs or NixOS version 22.11 please go to
+<<sec-flakes-standalone-stable>>.
+
+[[sec-flakes-standalone-unstable]]
+==== Unstable Version
+
+To prepare an initial Home Manager configuration for your logged in user,
+you can run the Home Manager `init` command directly from its flake.
+
+For example, to generate and activate a configuration in `~/.config/home-manager`,
+run the command
+
+[source,console]
+$ nix run home-manager/master -- init --switch ~/.config/home-manager
+
+or, if you want to inspect and edit the configuration before activating it
+
+[source,console]
+----
+$ nix run home-manager/master -- init ~/.config/home-manager
+$ # Edit files in ~/.config/home-manager
+$ nix run home-manager/master -- init --switch ~/.config/home-manager
+----
+
+This will generate a `flake.nix` and a `home.nix` file in
+`~/.config/home-manager`, creating the directory if it does not exist.
+Note, there is nothing special about `~/.config/home-manager`,
+you can keep your configuration in any directory you choose.
+
+After the initial activation has completed successfully then building
+and activating your flake-based configuration is as simple as
+
+[source,console]
+$ home-manager switch --flake ~/.config/home-manager
+
+[NOTE]
+====
+The flake inputs are not automatically updated by Home Manager.
+You need to use the standard `nix flake update` command for that.
+
+If you only want to update a single flake input,
+then the command `nix flake lock --update-input <input>` can be used.
+
+You can also pass flake-related options
+such as `--recreate-lock-file` or `--update-input <input>`
+to `home-manager` when building or switching,
+and these options will be forwarded to `nix build`.
+See the {nixos-wiki-flakes}[NixOS Wiki page] for details.
+====
+
+[[sec-flakes-standalone-stable]]
+==== Version 22.11
+
 1. Set up a flake with a `flake.nix` as follows:
 +
 [source,nix]

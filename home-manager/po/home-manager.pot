@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Home Manager\n"
 "Report-Msgid-Bugs-To: https://github.com/nix-community/home-manager/issues\n"
-"POT-Creation-Date: 2023-03-07 23:36+0100\n"
+"POT-Creation-Date: 2023-03-12 23:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,119 +18,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: home-manager/home-manager:60
+#: home-manager/home-manager:69
 msgid "No configuration file found at %s"
 msgstr ""
 
-#: home-manager/home-manager:79
+#: home-manager/home-manager:88
 msgid "No configuration file found. Please create one at %s"
 msgstr ""
 
-#: home-manager/home-manager:146
+#: home-manager/home-manager:155
 msgid "Can't inspect options of a flake configuration"
 msgstr ""
 
-#: home-manager/home-manager:185
-msgid "Can't instantiate a flake configuration"
-msgstr ""
-
-#: home-manager/home-manager:258
-msgid ""
-"There is %d unread and relevant news item.\n"
-"Read it by running the command \"%s news\"."
-msgid_plural ""
-"There are %d unread and relevant news items.\n"
-"Read them by running the command \"%s news\"."
-msgstr[0] ""
-msgstr[1] ""
-
-#: home-manager/home-manager:272
-msgid "Unknown \"news.display\" setting \"%s\"."
-msgstr ""
-
-#: home-manager/home-manager:279
-#, sh-format
-msgid "Please set the $EDITOR environment variable"
-msgstr ""
-
-#: home-manager/home-manager:294
-msgid "Cannot run build in read-only directory"
-msgstr ""
-
-#: home-manager/home-manager:378
-msgid "No generation with ID %s"
-msgstr ""
-
-#: home-manager/home-manager:380
-msgid "Cannot remove the current generation %s"
-msgstr ""
-
-#: home-manager/home-manager:382
-msgid "Removing generation %s"
-msgstr ""
-
-#: home-manager/home-manager:401
-msgid "No generations to expire"
-msgstr ""
-
-#: home-manager/home-manager:412
-msgid "No home-manager packages seem to be installed."
-msgstr ""
-
-#: home-manager/home-manager:469
-msgid "Unknown argument %s"
-msgstr ""
-
-#: home-manager/home-manager:485
-msgid "This will remove Home Manager from your system."
-msgstr ""
-
-#: home-manager/home-manager:488
-msgid "This is a dry run, nothing will actually be uninstalled."
-msgstr ""
-
-#: home-manager/home-manager:492
-msgid "Really uninstall Home Manager?"
-msgstr ""
-
-#: home-manager/home-manager:498
-msgid "Switching to empty Home Manager configuration..."
-msgstr ""
-
-#: home-manager/home-manager:525
-msgid "Yay!"
-msgstr ""
-
-#: home-manager/home-manager:530
-msgid "Home Manager is uninstalled but your home.nix is left untouched."
-msgstr ""
-
-#: home-manager/home-manager:695
+#: home-manager/home-manager:214 home-manager/home-manager:238
+#: home-manager/home-manager:876
 msgid "%s: unknown option '%s'"
 msgstr ""
 
-#: home-manager/home-manager:696
+#: home-manager/home-manager:219 home-manager/home-manager:877
 msgid "Run '%s --help' for usage help"
 msgstr ""
 
-#: home-manager/home-manager:730
-msgid "expire-generations expects one argument, got %d."
+#: home-manager/home-manager:229
+msgid "The 'init' command requires a directory as argument"
 msgstr ""
 
-#: home-manager/home-manager:752
-msgid "Unknown command: %s"
+#: home-manager/home-manager:246
+msgid "The file %s already exists, leaving it unchanged..."
 msgstr ""
 
-#: home-manager/install.nix:22
-msgid "Creating initial Home Manager configuration..."
+#: home-manager/home-manager:248 home-manager/home-manager:298
+msgid "Creating %s..."
 msgstr ""
 
-#: home-manager/install.nix:66
+#: home-manager/home-manager:296
+msgid "The file %s already exists, skipping generation..."
+msgstr ""
+
+#: home-manager/home-manager:340
 msgid "Creating initial Home Manager generation..."
 msgstr ""
 
 #. translators: The "%s" specifier will be replaced by a file path.
-#: home-manager/install.nix:71
+#: home-manager/home-manager:345
 msgid ""
 "All done! The home-manager tool should now be installed and you can edit\n"
 "\n"
@@ -141,7 +71,7 @@ msgid ""
 msgstr ""
 
 #. translators: The "%s" specifier will be replaced by a URL.
-#: home-manager/install.nix:76
+#: home-manager/home-manager:350
 msgid ""
 "Uh oh, the installation failed! Please create an issue at\n"
 "\n"
@@ -150,6 +80,89 @@ msgid ""
 "if the error seems to be the fault of Home Manager."
 msgstr ""
 
-#: home-manager/install.nix:83
+#: home-manager/home-manager:360
+msgid "Can't instantiate a flake configuration"
+msgstr ""
+
+#: home-manager/home-manager:433
+msgid ""
+"There is %d unread and relevant news item.\n"
+"Read it by running the command \"%s news\"."
+msgid_plural ""
+"There are %d unread and relevant news items.\n"
+"Read them by running the command \"%s news\"."
+msgstr[0] ""
+msgstr[1] ""
+
+#: home-manager/home-manager:447
+msgid "Unknown \"news.display\" setting \"%s\"."
+msgstr ""
+
+#: home-manager/home-manager:454
+#, sh-format
+msgid "Please set the $EDITOR environment variable"
+msgstr ""
+
+#: home-manager/home-manager:469
+msgid "Cannot run build in read-only directory"
+msgstr ""
+
+#: home-manager/home-manager:553
+msgid "No generation with ID %s"
+msgstr ""
+
+#: home-manager/home-manager:555
+msgid "Cannot remove the current generation %s"
+msgstr ""
+
+#: home-manager/home-manager:557
+msgid "Removing generation %s"
+msgstr ""
+
+#: home-manager/home-manager:576
+msgid "No generations to expire"
+msgstr ""
+
+#: home-manager/home-manager:587
+msgid "No home-manager packages seem to be installed."
+msgstr ""
+
+#: home-manager/home-manager:644
+msgid "Unknown argument %s"
+msgstr ""
+
+#: home-manager/home-manager:660
+msgid "This will remove Home Manager from your system."
+msgstr ""
+
+#: home-manager/home-manager:663
+msgid "This is a dry run, nothing will actually be uninstalled."
+msgstr ""
+
+#: home-manager/home-manager:667
+msgid "Really uninstall Home Manager?"
+msgstr ""
+
+#: home-manager/home-manager:673
+msgid "Switching to empty Home Manager configuration..."
+msgstr ""
+
+#: home-manager/home-manager:700
+msgid "Yay!"
+msgstr ""
+
+#: home-manager/home-manager:705
+msgid "Home Manager is uninstalled but your home.nix is left untouched."
+msgstr ""
+
+#: home-manager/home-manager:914
+msgid "expire-generations expects one argument, got %d."
+msgstr ""
+
+#: home-manager/home-manager:936
+msgid "Unknown command: %s"
+msgstr ""
+
+#: home-manager/install.nix:21
 msgid "This derivation is not buildable, please run it using nix-shell."
 msgstr ""

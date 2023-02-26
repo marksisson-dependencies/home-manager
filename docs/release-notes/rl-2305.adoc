@@ -19,6 +19,13 @@ in your configuration then you must change it to
 [source,nix]
 programs.firefox.profiles.myprofile.extensions = [ foo bar ];
 
+* The `home-manager` tool now offers an `init` command.
+This command can be used to generate an initial Home Manager configuration,
+and optionally also activate it.
+The recommended installation method for a standalone Home Manager setup
+with Nix flakes uses this new command.
+See <<sec-flakes-standalone-unstable>> for more.
+
 [[sec-release-23.05-state-version-changes]]
 === State Version Changes
 
